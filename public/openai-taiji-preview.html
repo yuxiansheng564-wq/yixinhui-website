@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAI风格太极图标预览</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    h1 {
+      color: #fff;
+      font-size: 28px;
+      margin-bottom: 50px;
+      font-weight: 600;
+    }
+    .icons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      width: 100%;
+      max-width: 1200px;
+    }
+    .icon-container {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      transition: all 0.3s ease;
+    }
+    .icon-container:hover {
+      border-color: #666;
+      transform: translateY(-5px);
+    }
+    .icon-wrapper {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a1a1a;
+      border-radius: 12px;
+    }
+    .icon-wrapper svg {
+      width: 80px;
+      height: 80px;
+      color: white;
+    }
+    .label {
+      color: #fff;
+      font-size: 15px;
+      text-align: center;
+      font-weight: 500;
+    }
+    .tag {
+      margin-top: -10px;
+      padding: 4px 12px;
+      background: #10a37f;
+      color: white;
+      font-size: 12px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>OpenAI 风格太极图标设计</h1>
+
+  <div class="icons-grid">
+    <!-- 方案1：像素化太极 -->
+    <div class="icon-container">
+      <div class="icon-wrapper">
+        <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <!-- 外圈像素化圆形 -->
+          <rect x="10" y="30" width="6" height="6" rx="1"/>
+          <rect x="10" y="38" width="6" height="6" rx="1"/>
+          <rect x="10" y="46" width="6" height="6" rx="1"/>
+          <rect x="10" y="54" width="6" height="6" rx="1"/>
+          <rect x="10" y="62" width="6" height="6" rx="1"/>
+
+          <rect x="18" y="18" width="6" height="6" rx="1"/>
+          <rect x="18" y="70" width="6" height="6" rx="1"/>
+
+          <rect x="26" y="10" width="6" height="6" rx="1"/>
+          <rect x="26" y="78" width="6" height="6" rx="1"/>
+
+          <rect x="34" y="6" width="6" height="6" rx="1"/>
+          <rect x="34" y="82" width="6" height="6" rx="1"/>
+
+          <rect x="42" y="6" width="6" height="6" rx="1"/>
+          <rect x="42" y="82" width="6" height="6" rx="1"/>
+
+          <rect x="50" y="6" width="6" height="6" rx="1"/>
+          <rect x="50" y="82" width="6" height="6" rx="1"/>
+
+          <rect x="58" y="6" width="6" height="6" rx="1"/>
+          <rect x="58" y="82" width="6" height="6" rx="1"/>
+
+          <rect x="66" y="6" width="6" height="6" rx="1"/>
+          <rect x="66" y="82" width="6" height="6" rx="1"/>
+
+          <rect x="74" y="10" width="6" height="6" rx="1"/>
+          <rect x="74" y="78" width="6" height="6" rx="1"/>
+
+          <rect x="82" y="18" width="6" height="6" rx="1"/>
+          <rect x="82" y="70" width="6" height="6" rx="1"/>
+
+          <rect x="84" y="30" width="6" height="6" rx="1"/>
+          <rect x="84" y="38" width="6" height="6" rx="1"/>
+          <rect x="84" y="46" width="6" height="6" rx="1"/>
+          <rect x="84" y="54" width="6" height="6" rx="1"/>
+          <rect x="84" y="62" width="6" height="6" rx="1"/>
+
+          <!-- 阳面（右上）像素化 -->
+          <rect x="30" y="30" width="6" height="6" rx="1"/>
+          <rect x="30" y="38" width="6" height="6" rx="1"/>
+          <rect x="38" y="26" width="6" height="6" rx="1"/>
+          <rect x="38" y="34" width="6" height="6" rx="1"/>
+          <rect x="46" y="22" width="6" height="6" rx="1"/>
+          <rect x="46" y="30" width="6" height="6" rx="1"/>
+          <rect x="54" y="22" width="6" height="6" rx="1"/>
+          <rect x="54" y="30" width="6" height="6" rx="1"/>
+          <rect x="62" y="26" width="6" height="6" rx="1"/>
+          <rect x="62" y="34" width="6" height="6" rx="1"/>
+          <rect x="70" y="30" width="6" height="6" rx="1"/>
+          <rect x="70" y="38" width="6" height="6" rx="1"/>
+
+          <!-- 阴面（左下）像素化 -->
+          <rect x="22" y="58" width="6" height="6" rx="1"/>
+          <rect x="22" y="66" width="6" height="6" rx="1"/>
+          <rect x="30" y="58" width="6" height="6" rx="1"/>
+          <rect x="30" y="66" width="6" height="6" rx="1"/>
+          <rect x="38" y="62" width="6" height="6" rx="1"/>
+          <rect x="38" y="70" width="6" height="6" rx="1"/>
+          <rect x="46" y="66" width="6" height="6" rx="1"/>
+          <rect x="46" y="74" width="6" height="6" rx="1"/>
+          <rect x="54" y="66" width="6" height="6" rx="1"/>
+          <rect x="54" y="74" width="6" height="6" rx="1"/>
+          <rect x="62" y="62" width="6" height="6" rx="1"/>
+          <rect x="62" y="70" width="6" height="6" rx="1"/>
+          <rect x="70" y="58" width="6" height="6" rx="1"/>
+          <rect x="70" y="66" width="6" height="6" rx="1"/>
+
+          <!-- 中间分割线（S形像素） -->
+          <rect x="46" y="38" width="6" height="6" rx="1"/>
+          <rect x="46" y="46" width="6" height="6" rx="1"/>
+          <rect x="46" y="54" width="6" height="6" rx="1"/>
+          <rect x="46" y="62" width="6" height="6" rx="1"/>
+          <rect x="54" y="38" width="6" height="6" rx="1"/>
+          <rect x="54" y="46" width="6" height="6" rx="1"/>
+          <rect x="54" y="54" width="6" height="6" rx="1"/>
+          <rect x="54" y="62" width="6" height="6" rx="1"/>
+
+          <!-- 鱼眼（像素点） -->
+          <rect x="46" y="22" width="6" height="6" rx="1" fill="white" stroke="none"/>
+          <rect x="54" y="74" width="6" height="6" rx="1" fill="white" stroke="none"/>
+        </svg>
+      </div>
+      <span class="label">方案1：像素化太极</span>
+      <span class="tag">推荐</span>
+    </div>
+
+    <!-- 方案2：几何线条太极 -->
+    <div class="icon-container">
+      <div class="icon-wrapper">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- 外圈 - 六边形风格 -->
+          <path d="M50 10 L75 25 L75 75 L50 90 L25 75 L25 25 Z" stroke="currentColor" stroke-width="3"/>
+
+          <!-- 内部太极 - 简化几何 -->
+          <path d="M50 25 L50 50 L75 50" stroke="currentColor" stroke-width="3" fill="currentColor" opacity="0.9"/>
+          <path d="M50 75 L50 50 L25 50" stroke="currentColor" stroke-width="3" fill="currentColor" opacity="0.9"/>
+
+          <!-- S形分割线 -->
+          <path d="M50 25 C62.5 25 75 37.5 75 50 C75 62.5 62.5 75 50 75 C37.5 75 25 62.5 25 50" stroke="currentColor" stroke-width="3" fill="none"/>
+
+          <!-- 鱼眼 - 几何方形 -->
+          <rect x="46" y="30" width="8" height="8" rx="2" fill="currentColor" stroke="none"/>
+          <rect x="46" y="62" width="8" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </div>
+      <span class="label">方案2：几何线条太极</span>
+    </div>
+
+    <!-- 方案3：分层环形太极 -->
+    <div class="icon-container">
+      <div class="icon-wrapper">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- 外层环 -->
+          <circle cx="50" cy="50" r="42" stroke="currentColor" stroke-width="4" fill="none"/>
+
+          <!-- 中层环 - 分割 -->
+          <path d="M50 8 A42 42 0 0 1 92 50" stroke="currentColor" stroke-width="4" fill="currentColor" opacity="0.8"/>
+          <path d="M50 92 A42 42 0 0 1 8 50" stroke="currentColor" stroke-width="4" fill="currentColor" opacity="0.8"/>
+
+          <!-- 内层S形 -->
+          <path d="M50 30 C65 30 70 40 70 50 C70 60 65 70 50 70 C35 70 30 60 30 50" stroke="currentColor" stroke-width="4" fill="none"/>
+
+          <!-- 鱼眼 - 圆形简约 -->
+          <circle cx="50" cy="35" r="5" fill="currentColor" stroke="none"/>
+          <circle cx="50" cy="65" r="5" fill="none" stroke="currentColor" stroke-width="3"/>
+        </svg>
+      </div>
+      <span class="label">方案3：分层环形太极</span>
+    </div>
+
+    <!-- 方案4：抽象太极 -->
+    <div class="icon-container">
+      <div class="icon-wrapper">
+        <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(50,50)">
+            <!-- 旋转的几何形状 -->
+            <path d="M0 -35 L10 -25 L25 -25 L15 -15 L25 -5 L10 -5 L0 5 L-10 -5 L-25 -5 L-15 -15 L-25 -25 L-10 -25 Z" opacity="0.9"/>
+            <path d="M0 35 L10 25 L25 25 L15 15 L25 5 L10 5 L0 -5 L-10 5 L-25 5 L-15 15 L-25 25 L-10 25 Z" opacity="0.9"/>
+
+            <!-- 中心连接 -->
+            <circle cx="0" cy="0" r="8" opacity="0.6"/>
+
+            <!-- 抽象鱼眼 -->
+            <rect x="-4" y="-22" width="8" height="8" rx="2" fill="white"/>
+            <rect x="-4" y="14" width="8" height="8" rx="2" fill="black" stroke="currentColor" stroke-width="1"/>
+          </g>
+        </svg>
+      </div>
+      <span class="label">方案4：抽象太极</span>
+    </div>
+  </div>
+</body>
+</html>

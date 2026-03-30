@@ -1,0 +1,48 @@
+{
+  "weekly-tips": [
+    {
+      "id": "tip-1",
+      "title": "狼哥数字人演示",
+      "description": "演示数字人如何在实际工作中应用",
+      "duration": "5:30",
+      "thumbnail": "/videos/AI开放日/数字人/狼哥数字人封面.jpg",
+      "type": "local",
+      "videoUrl": "/videos/狼哥数字人.mp4"
+    },
+    {
+      "id": "tip-5",
+      "title": "AI销售管理如何做？",
+      "description": "内训偷拍，从第一性原理出发：销售的核心是信任交换，而非简单的话术模板",
+      "duration": "5:00",
+      "type": "bilibili",
+      "embedCode": "//player.bilibili.com/player.html?isOutside=true&aid=116020874382329&bvid=BV14JFqzNESv&cid=35850619539&p=1"
+    },
+    {
+      "id": "tip-2",
+      "title": "AI辅助海报设计",
+      "description": "使用AI工具快速完成海报设计与排版",
+      "duration": "3:15",
+      "thumbnail": "/thumbnails/tip-2.jpg",
+      "type": "local",
+      "videoUrl": "/videos/tip-2.mp4"
+    },
+    {
+      "id": "tip-3",
+      "title": "AI自动化工作流",
+      "description": "演示AI如何自动化日常重复性工作",
+      "duration": "3:30",
+      "thumbnail": "/thumbnails/tip-3.jpg",
+      "type": "local",
+      "videoUrl": "/videos/tip-3.mp4"
+    },
+    {
+      "id": "tip-4",
+      "title": "AI数据分析",
+      "description": "使用AI快速分析和可视化业务数据",
+      "duration": "2:50",
+      "thumbnail": "/thumbnails/tip-4.jpg",
+      "type": "local",
+      "videoUrl": "/videos/tip-4.mp4"
+    }
+  ]
+}

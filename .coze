@@ -1,0 +1,15 @@
+[project]
+requires = ["nodejs-24"]
+
+[vars]
+BOT_API_TOKEN = "pat_gGlYhGcdihnPT6440AqUnIOkgAuLr52S7x62n0mDaN12qtCrDOWHnjOUoJuH3lNI"
+
+[dev]
+build = ["bash", "./scripts/prepare.sh"]
+run = ["bash", "./scripts/dev.sh"]
+deps = ["git"] # -> apt install git
+
+[deploy]
+build = ["bash","./scripts/build.sh"]
+run = ["bash","./scripts/start.sh"]
+deps = ["git"] # -> apt install git

@@ -1,0 +1,26 @@
+{
+  "name": "意心会 - AI应用赋能服务平台",
+  "short_name": "意心会",
+  "description": "意心会 - AI应用赋能服务平台，通过商业级AI应用开发和知识付费服务打造AI应用服务的新范式",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#7c3aed",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "technology", "ai"],
+  "lang": "zh-CN"
+}
