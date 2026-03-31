@@ -87,9 +87,7 @@
   "engines": {
     "pnpm": ">=9.0.0"
   },
-  "pnpm": {
-    "overrides": {
-      "esbuild": "^0.25.12"
-    }
+  "overrides": {
+    "esbuild": "^0.25.12"
   }
 }

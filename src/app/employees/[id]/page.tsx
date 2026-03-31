@@ -372,7 +372,7 @@ const employees: Employee[] = [
         { label: '关键词策略定制', values: ['✅', '✅', '✅'] },
         { label: '短视频搜索矩阵', values: ['✅', '—', '✅'] },
         { label: '效果承诺', values: ['5个关键词\n上短视频搜索排名', '至少5个关键词\n品牌搜索首屏或TOP5', '享有两个产品\n全部权益'] },
-        { label: '价格', values: ['¥9,980', '¥9,980', '¥19,800'], isPrice: true },
+        { label: '价格', values: ['¥19,800', '¥19,800', '¥39,980'], isPrice: true },
       ],
     },
     // 服务流程
@@ -478,6 +478,14 @@ const employees: Employee[] = [
               { label: '关键策略', value: '抖音搜索优化 + 关键词矩阵覆盖' },
             ],
           },
+          {
+            title: '雨打芭蕉·重庆光环花园城美食',
+            rows: [
+              { label: '见效速度', value: '快速上榜' },
+              { label: '关键词', value: '重庆光环花园城美食' },
+              { label: '关键策略', value: '本地美食蓝海词精准覆盖' },
+            ],
+          },
         ],
       },
     ],
@@ -489,18 +497,18 @@ const employees: Employee[] = [
         title: '首期启动按效果付费',
         steps: [
           {
-            price: '¥3,980',
+            price: '¥5,800',
             label: '先付启动',
             services: ['关键词策略', '内容生产', '全平台分发'],
             target: '目标：5个关键词上榜'
           },
           {
-            price: '¥6,000',
+            price: '¥14,000',
             label: '上榜后补尾款',
             note: '效果达标再付款'
           }
         ],
-        remark: 'AI 同城榜 ¥6,980 启动，上榜后补齐尾款 ¥13,000'
+        remark: 'AI 同城榜 ¥11,800 启动，上榜后补齐尾款 ¥28,000'
       },
       // 阶段二：运营模式选择
       phaseTwo: {
@@ -991,6 +999,20 @@ export default function EmployeeDetailPage() {
           </FadeInUp>
         )}
 
+        {/* 限量服务说明（AI同城榜专用） */}
+        {employee.id === 'city-ranking' && (
+          <FadeInUp delay={230}>
+            <section className="mb-8">
+              <div className="bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-xl border border-yellow-500/30 p-4">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-yellow-400 text-sm font-bold">🔒 限量服务</span>
+                </div>
+                <p className="text-sm text-gray-300 leading-relaxed">为确保服务效果，每个城市、每个细分领域限服务1位客户。在服务客户期间内，不再接同一城市的同一领域客户服务。</p>
+              </div>
+            </section>
+          </FadeInUp>
+        )}
+
         {/* 套餐对比表格（AI全域同城榜专用） */}
         {employee.packageTable && (
           <FadeInUp delay={240}>
@@ -1054,8 +1076,8 @@ export default function EmployeeDetailPage() {
                     <div className="flex-1 sm:text-center">
                       <div className="inline-flex flex-col items-start sm:items-center">
                         <div className="flex items-center gap-1 mb-1">
-                          <span className="text-2xl font-bold text-white">¥3,980</span>
-                          <span className="text-xs text-gray-400">先付启动</span>
+                          <span className="text-2xl font-bold text-white">{employee.installmentNote.phaseOne?.steps?.[0]?.price || '¥5,980'}</span>
+                          <span className="text-xs text-gray-400">{employee.installmentNote.phaseOne?.steps?.[0]?.label || '先付启动'}</span>
                         </div>
                         <div className="flex flex-wrap gap-1 text-xs text-gray-400">
                           <span className="px-1.5 py-0.5 bg-white/5 rounded">关键词策略</span>
@@ -1089,8 +1111,8 @@ export default function EmployeeDetailPage() {
                     <div className="flex-1 sm:text-center">
                       <div className="inline-flex flex-col items-start sm:items-center">
                         <div className="flex items-center gap-1 mb-1">
-                          <span className="text-2xl font-bold text-green-400">¥6,000</span>
-                          <span className="text-xs text-gray-400">补尾款</span>
+                          <span className="text-2xl font-bold text-green-400">{employee.installmentNote.phaseOne?.steps?.[1]?.price || '¥13,820'}</span>
+                          <span className="text-xs text-gray-400">{employee.installmentNote.phaseOne?.steps?.[1]?.label || '上榜后补尾款'}</span>
                         </div>
                         <div className="text-xs text-green-400">
                           ✅ 效果达标再付款
@@ -1102,7 +1124,7 @@ export default function EmployeeDetailPage() {
                   {/* 备注 */}
                   <div className="mt-4 pt-3 border-t border-white/10">
                     <p className="text-xs text-gray-400 text-center">
-                      💡 AI 同城榜 <span className="text-purple-400">¥6,980</span> 启动，上榜后补齐尾款 <span className="text-green-400">¥13,000</span>
+                      💡 AI 同城榜 <span className="text-purple-400">¥11,800</span> 启动，上榜后补齐尾款 <span className="text-green-400">¥28,000</span>
                     </p>
                   </div>
                 </div>

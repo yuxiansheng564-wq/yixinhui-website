@@ -24,12 +24,14 @@ const data = {
     { name: '全域多平台覆盖', desc: '10+平台同步铺设，数据互相抓取，实现排名叠加效应' },
     { name: '权威媒体背书', desc: '通过搜狐、网易等权威渠道发布，大幅提升品牌可信度与搜索引擎权重' },
   ],
+  // 限量服务说明
+  exclusivity: '为确保服务效果，每个城市、每个细分领域限服务1位客户。在服务客户期间内，不再接同一城市的同一领域客户服务。',
   // 新套餐数据结构
   packages: [
     {
       name: 'AI同城榜',
-      price: '¥19,800',
-      desc: '含短视频同城榜 + AI同城榜全部功能',
+      price: '¥39,980',
+      desc: '含短视频同城榜 + 大模型同城榜全部功能',
       recommend: '全网霸屏，本地搜索都是你',
       isRecommended: true,
       effect: null,
@@ -37,13 +39,13 @@ const data = {
     },
     {
       name: '短视频同城榜',
-      price: '¥9,980',
+      price: '¥19,800',
       channels: '抖音、快手、小红书、视频号',
       suitable: '主攻短视频平台的商家',
     },
     {
       name: '大模型同城榜',
-      price: '¥9,980',
+      price: '¥19,800',
       channels: '豆包、元宝、DeepSeek等AI搜索',
       suitable: '想要权威媒体背书的商家',
     },
@@ -99,6 +101,12 @@ const data = {
       keyword: '抖音搜索前18条中大部分为其内容',
       strategy: '抖音搜索优化 + 关键词矩阵覆盖',
     },
+    {
+      title: '雨打芭蕉·重庆光环花园城美食',
+      speed: '快速上榜',
+      keyword: '重庆光环花园城美食',
+      strategy: '本地美食蓝海词精准覆盖',
+    },
   ],
   installmentNote: {
     title: '付费方式',
@@ -106,18 +114,18 @@ const data = {
       title: '首期启动按效果付费',
       steps: [
         {
-          price: '¥3,980',
+          price: '¥5,800',
           label: '先付启动',
           services: ['关键词策略', '内容生产', '全平台分发'],
           target: '目标：5个关键词上榜'
         },
         {
-          price: '¥6,000',
+          price: '¥14,000',
           label: '上榜后补尾款',
           note: '效果达标再付款'
         }
       ],
-      remark: 'AI 同城榜 ¥6,980 启动，上榜后补齐尾款 ¥13,000'
+      remark: 'AI 同城榜 ¥11,800 启动，上榜后补齐尾款 ¥28,000'
     },
     phaseTwo: {
       title: '补完尾款后，选择运营模式',
@@ -259,6 +267,16 @@ export default function ShareCityRankingPage() {
                 <span className="text-gray-300">{data.platforms.business.join('、')}</span>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* 限量服务说明 */}
+        <section className="mb-8">
+          <div className="bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-xl border border-yellow-500/30 p-4">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-yellow-400 text-sm font-bold">🔒 限量服务</span>
+            </div>
+            <p className="text-sm text-gray-300 leading-relaxed">{data.exclusivity}</p>
           </div>
         </section>
 
@@ -437,7 +455,7 @@ export default function ShareCityRankingPage() {
               </div>
               
               <p className="text-xs text-gray-400 text-center pt-3 mt-3 border-t border-white/10">
-                💡 AI 同城榜 <span className="text-purple-400">¥6,980</span> 启动，上榜后补齐尾款 <span className="text-green-400">¥13,000</span>
+                💡 AI 同城榜 <span className="text-purple-400">¥11,800</span> 启动，上榜后补齐尾款 <span className="text-green-400">¥28,000</span>
               </p>
             </div>
           </div>
